@@ -6,17 +6,26 @@
 
 //Funktionsrumpf (body) callee
 
+// function test();
 
-function test()
-{
-    console.log("Hallo Sabine!");
-}
+//     console.log("Hallo Sabine!");
+// }
 
 
 // Funktionsaufruf (call)
-test();
-test();
-test();
-test();
+// 
+/** Funktionen 02a */
+// 2a. Parametrisierung + Datenübergabe von Innen
+
+
+ausgabeNamenParam();
+
+function ausgabeNamenParam(firstName) {
+    console.log("Hallo " + firstName + "!");
+
+}
+
+// console.log(firstName); // Fehler : Scope!
+
 
 
