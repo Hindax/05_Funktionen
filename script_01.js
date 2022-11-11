@@ -41,3 +41,24 @@ ausgabeNamenParams(prompt("Vorname?"), prompt("Nachname?"));
  }
 
 
+ // Funktionen 03 a
+// 03a Vorbereitung
+// Postulat one function = one job (uncle Bob)
+// SRP Single responsibility principle
+
+
+ausgabeNamenParams("Hinda2" , "Whatever2"); // Argumente
+
+function ausgabeNamenParam2(firstName, familyName) // Parameter
+{
+
+    //1. Funktionalität: Srtring composing
+    const gap = " ";
+    const outputStr = "Hallo " + firstName + gap + familyName + "!";
+
+    //2. Funktionalität: data output
+
+    console.log(outputStr);
+}
+
+
