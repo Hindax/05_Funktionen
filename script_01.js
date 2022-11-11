@@ -18,12 +18,12 @@
 // 2a. Parametrisierung + Datenübergabe von Innen
 
 
-ausgabeNamenParam();
 
 function ausgabeNamenParam(firstName) {
     console.log("Hallo " + firstName + "!");
 
 }
+ausgabeNamenParam(prompt("whatever"));
 
 // console.log(firstName); // Fehler : Scope!
 
