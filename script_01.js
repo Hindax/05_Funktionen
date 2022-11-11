@@ -17,9 +17,9 @@
 /** Funktionen 02a */
 // 2a. Parametrisierung + Datenübergabe von Innen
 
-function ausgabeNamenParam(firstName) {
+// function ausgabeNamenParam(firstName) {
 
-}
+//}
 
 // function ausgabeNamenParam(firstName) {
 //     console.log("Hallo " + firstName + "!");
@@ -35,10 +35,10 @@ function ausgabeNamenParam(firstName) {
 
 //  function ausgabeNamenParams("Hinda"); //Argument
 
- function ausgabeNamenParams(firstName, familyName) // parameter
- {
-    console.log("Hallo " + firstName + " " + familyName + "!");
- }
+//  function ausgabeNamenParams(firstName, familyName) // parameter
+//  {
+//     console.log("Hallo " + firstName + " " + familyName + "!");
+//  }
 
 
  // Funktionen 03 a
@@ -49,17 +49,17 @@ function ausgabeNamenParam(firstName) {
 
 // ausgabeNamenParams("Hinda2" , "Whatever2"); // Argumente
 
-function ausgabeNamenParam2(firstName, familyName) // Parameter
-{
+// function ausgabeNamenParam2(firstName, familyName) // Parameter
+// {
 
-    //1. Funktionalität: Srtring composing
-    const gap = " ";
-    const outputStr = "Hallo " + firstName + gap + familyName + "!";
+//     //1. Funktionalität: Srtring composing
+//     const gap = " ";
+//     const outputStr = "Hallo " + firstName + gap + familyName + "!";
 
-    //2. Funktionalität: string output
+//     //2. Funktionalität: string output
 
-    console.log(outputStr);
-}
+//     console.log(outputStr);
+// }
 
 
 
@@ -68,20 +68,23 @@ function ausgabeNamenParam2(firstName, familyName) // Parameter
 
 //1.Funktionalität: String composing
 
-output(getString("test1", "test2"));
+let x = getString("test1", "test2");
 function getString(firstName,familyName) {
     const gap = " ";
     const outputStr = "Hallo " + firstName + gap + familyName + "!";
     return outputStr;
 }
+console.log(x);
+
+
 
 
 // console.log(outputStr);
 
 // output("test"); // Call
 
-function output(outputData) { // wrappeer
-    console.log(outputData);
-}
+//function output(outputData) { // wrappeer
+ //   console.log(outputData);
+//}
 
 
