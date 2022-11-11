@@ -25,8 +25,8 @@ function ausgabeNamenParam(firstName) {
 //     console.log("Hallo " + firstName + "!");
 
 
-ausgabeNamenParams("Hinda" , "Whatever");
-ausgabeNamenParams(prompt("Vorname?"), prompt("Nachname?"));
+// ausgabeNamenParams("Hinda" , "Whatever");
+// ausgabeNamenParams(prompt("Vorname?"), prompt("Nachname?"));
 // Argumente sind Daten für Parameter
 
 // console.log(firstName); // Fehler : Scope!
@@ -47,7 +47,7 @@ ausgabeNamenParams(prompt("Vorname?"), prompt("Nachname?"));
 // SRP Single responsibility principle
 
 
-ausgabeNamenParams("Hinda2" , "Whatever2"); // Argumente
+// ausgabeNamenParams("Hinda2" , "Whatever2"); // Argumente
 
 function ausgabeNamenParam2(firstName, familyName) // Parameter
 {
@@ -56,9 +56,32 @@ function ausgabeNamenParam2(firstName, familyName) // Parameter
     const gap = " ";
     const outputStr = "Hallo " + firstName + gap + familyName + "!";
 
-    //2. Funktionalität: data output
+    //2. Funktionalität: string output
 
     console.log(outputStr);
+}
+
+
+
+/** Funktionen 03b */
+// Trennen der Funktionalitäten , return
+
+//1.Funktionalität: String composing
+
+output(getString("test1", "test2"));
+function getString(firstName,familyName) {
+    const gap = " ";
+    const outputStr = "Hallo " + firstName + gap + familyName + "!";
+    return outputStr;
+}
+
+
+// console.log(outputStr);
+
+// output("test"); // Call
+
+function output(outputData) { // wrappeer
+    console.log(outputData);
 }
 
 
